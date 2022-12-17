@@ -20,13 +20,6 @@ CREATE TABLE dim_location (
 	PRIMARY KEY (location_id)
 );
 
-CREATE TABLE dim_sales_offer (
-    sales_offer_id int,
-	[description] nvarchar(255),
-	discount_price numeric,
-	PRIMARY KEY (sales_offer_id)
-);
-
 CREATE TABLE dim_product (
 	product_id int,
 	[name] nvarchar(255),
