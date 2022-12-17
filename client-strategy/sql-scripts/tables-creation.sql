@@ -56,6 +56,5 @@ CREATE TABLE fact_sales(
 	FOREIGN KEY (location_id) REFERENCES dim_location(location_id),
 	FOREIGN KEY (customer_id) REFERENCES dim_customer(customer_id),
 	FOREIGN KEY (product_id) REFERENCES dim_product(product_id),
-	FOREIGN KEY (sales_offer_id) REFERENCES dim_sales_offer(sales_offer_id)
 )
 

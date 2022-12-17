@@ -2,8 +2,6 @@ use AdventureWorks2019
 go
 
 ;WITH XMLNAMESPACES ('http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/IndividualSurvey' AS ns)
-
-
 SELECT        
 	-- For dim_time
 	soh.OrderDate as time_id,
