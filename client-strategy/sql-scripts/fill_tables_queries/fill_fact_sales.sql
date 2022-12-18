@@ -7,7 +7,7 @@ SELECT
 	t.time_id,
 	t.location_id,
 	t.customer_id,
-	abs(t.product_id),
+	abs(t.product_id) as product_id,
 	t.quantity,
 	t.total_price
 FROM
@@ -20,18 +20,13 @@ FROM
 		DATEPART(quarter,soh.OrderDate) as [quarter],
 		DATEPART(month,soh.OrderDate) as [month],
 		DATENAME(dw, soh.OrderDate) as [day],
-		case 
-			when (DATEPART(hour,soh.OrderDate) < 12) then 'Morning'
-			when DATEPART(hour,soh.OrderDate) >=12 and DATEPART(hour,soh.OrderDate) < 19 then 'Afternoon'
-			else 'Night'
-		end as time_of_day,
 
 		-- For dim_location
 		pa.AddressID as location_id, 
 		pcr.Name AS country, 
 		psp.Name AS province, 
 		pa.City AS city,
-	-
+	
 		-- For dim_product
 		prp.ProductID AS product_id,
 		prp.Name AS [name], 

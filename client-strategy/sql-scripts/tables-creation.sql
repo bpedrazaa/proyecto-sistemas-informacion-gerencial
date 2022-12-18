@@ -2,13 +2,12 @@ use [Sales-Client]
 go
 
 CREATE TABLE dim_time (
-    time_id int,
+    time_id datetime,
 	[year] int,
 	[semester] int,
 	[quarter] int,
     [month] int,
-	[day] nvarchar(20),
-	time_of_day nvarchar(20)
+	[day] nvarchar(20)
 	PRIMARY KEY (time_id)
 );
 
@@ -45,11 +44,10 @@ CREATE TABLE dim_customer(
 );
 
 CREATE TABLE fact_sales(
-	time_id int NOT NULL,
+	time_id datetime NOT NULL,
 	location_id int NOT NULL,
 	customer_id int NOT NULL,
 	product_id int NOT NULL,
-	sales_offer_id int NOT NULL,
 	quantity int,
 	total_price numeric,
 	FOREIGN KEY (time_id) REFERENCES dim_time(time_id),
