@@ -52,12 +52,6 @@
       <FullPath>dsv_sales_person.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
-  <MiningModels>
-    <ProjectItem>
-      <Name>Dim Sales Person.dmm</Name>
-      <FullPath>Dim Sales Person.dmm</FullPath>
-    </ProjectItem>
-  </MiningModels>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
