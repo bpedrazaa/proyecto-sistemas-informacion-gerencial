@@ -1,0 +1,263 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="709a7d09-9e9f-4d1a-9135-531ae3ad3ef7" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Adventure Works Sales Person</ID>
+  <Name>Adventure Works Sales Person</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="d5cf5c08-0300-48c9-8f9c-9d6294eb6b51">
+      <ID>Dim Sales Person</ID>
+      <Name>Dim Sales Person</Name>
+      <DimensionID>Dim Sales Person</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="527621e3-849d-460f-ac28-f6560b82d48a">
+          <AttributeID>Sales Person Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ef0286c5-e719-4e1f-ba6c-b44ba007ac5c">
+          <AttributeID>Gender</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1dbd42cf-6a91-408f-b64d-2ce9744f335c">
+          <AttributeID>Marital Status</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="41437f47-6dc0-483c-82c2-1741e5aa6575">
+          <AttributeID>Age</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="67d3fd3f-53b9-415f-be8a-02c666e8c44b">
+          <AttributeID>Time Employed</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fb9323c3-a43a-4ce4-9463-ac47214181de">
+          <AttributeID>Organization Level</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2c44b457-8f3e-4f11-873c-a19c4ecc5b18">
+          <AttributeID>Bonus</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a113e040-088c-4d47-94f2-90e92644fbe7">
+          <AttributeID>Commission Pct</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="8465a782-f18e-4f8c-9d42-924777aec9d0">
+      <ID>Dim Pay History</ID>
+      <Name>Dim Pay History</Name>
+      <DimensionID>Dim Pay History</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="93108863-2c0c-4fc7-9d75-877a85fa7c8a">
+          <AttributeID>Pay History Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9ad99e1b-19a3-45f2-9b73-79b3f63df2ff">
+          <AttributeID>Rate Change Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8f65b7e4-4098-4aff-862e-746fc4bb9ecb">
+          <AttributeID>Hourly Rate</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2ea16ce4-c3e1-4950-b612-710b760225dc">
+          <AttributeID>Sales Person Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="6c161638-5a9a-4224-a599-c274c62436ce">
+      <ID>Dim Quota History</ID>
+      <Name>Dim Quota History</Name>
+      <DimensionID>Dim Quota History</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="fa333a01-fb23-4146-a245-b902d4f5e166">
+          <AttributeID>Quota History Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7c0e94ac-68a9-4c69-a308-51b71fa8e971">
+          <AttributeID>Quota Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="32770f37-9d0e-4c69-b851-4a26dcf2d5e0">
+          <AttributeID>Amount</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2080d40e-4eff-44e8-a65b-2fa7e2a65946">
+          <AttributeID>Sales Person Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="5341842d-c9f5-4925-b44e-de3c27ce6d00">
+      <ID>Dim Time</ID>
+      <Name>Dim Time</Name>
+      <DimensionID>Dim Time</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8f1829c4-4e5a-4402-8788-09941d8b7e2a">
+          <AttributeID>Time Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2d5e21b2-b0f9-4cfa-a0cc-cf031b3a4a33">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="121a0265-ac2e-41db-a8ca-8609521e51a2">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="42331ac7-9568-479a-bb8b-3b0300228b27">
+          <AttributeID>Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f0b6a0cc-53a4-4059-8e5f-054927a1eaf4">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5fd26f29-aca3-46aa-b511-eed3f5592bee">
+          <AttributeID>Semester</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="69272461-e241-43d2-acf2-86fbdb12d4a4">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="772dc18e-9205-4e06-8555-54c1f0ecb058">
+      <ID>Fact Sales</ID>
+      <Name>Fact Sales</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="ec8e8a94-8ee4-4bf8-a642-1d017125942c">
+          <ID>Total Amount</ID>
+          <Name>Total Amount</Name>
+          <Source dwd:design-time-name="56e9b6a2-7807-4f24-9234-d973891cc30e">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a1ab4c6b-95d5-4c05-a351-f28200071945">
+              <TableID>dbo_fact_sales</TableID>
+              <ColumnID>total_amount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="6bb06f1e-db05-4f5e-9681-97b118464119">
+          <ID>Fact Sales Count</ID>
+          <Name>Fact Sales Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="8cee475c-1636-4b50-9fef-03e557f505ff">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="20840e58-acf2-427c-b8e5-2d18ed5e566f">
+              <TableID>dbo_fact_sales</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a3e878e5-e77a-4405-9f1b-a8e0334c49f0">
+          <CubeDimensionID>Dim Sales Person</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="710227bf-c014-4f33-8cb2-e45b6330ae6b">
+              <AttributeID>Sales Person Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="16cccf6c-8e0e-48f4-bb5d-48318af49eda">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="dd2c8f05-6630-4da0-8f7d-8f5c188bb885">
+                    <TableID>dbo_fact_sales</TableID>
+                    <ColumnID>sales_person_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="209b7107-7e44-4a59-b8f4-381c182d8230">
+          <CubeDimensionID>Dim Pay History</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3f72ec7d-e17d-4bc8-909b-5e8d12c2c462">
+              <AttributeID>Pay History Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="aacaaacb-c3b8-4a9d-8696-9d183899d71b">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7c3cbad4-2a1e-4c2b-8018-f328f9aadc5c">
+                    <TableID>dbo_fact_sales</TableID>
+                    <ColumnID>pay_history_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="eb450255-7bf0-49d0-b915-80160622913c">
+          <CubeDimensionID>Dim Quota History</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="dd9f3189-caf8-4158-b0bc-8dc6c5d8f00d">
+              <AttributeID>Quota History Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="17583884-ff87-4d8c-880f-a3a64649b947">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="df8a2fc4-9cce-40f3-b19d-a41075498275">
+                    <TableID>dbo_fact_sales</TableID>
+                    <ColumnID>quota_history_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5b3ad38c-2bd6-4759-afe2-c0221860fa22">
+          <CubeDimensionID>Dim Time</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d96d210e-97b2-4aa7-9897-1bfe0027ead0">
+              <AttributeID>Time Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="de4c87b1-4dc0-4801-b789-7ac44e495fe2">
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="dce582b4-5963-449b-9a59-8d4ae802a723">
+                    <TableID>dbo_fact_sales</TableID>
+                    <ColumnID>time_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="9b736e69-6798-4533-bb30-6715ba04e0ca">
+    <DataSourceViewID>Adventure Works Sales Person</DataSourceViewID>
+  </Source>
+</Cube>
